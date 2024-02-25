@@ -217,6 +217,11 @@ section {
 
 /* BUTTONS */
 
+#disable-button{
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
 .btn-container {
   display: flex;
   justify-content: center;
@@ -321,7 +326,7 @@ section {
 
 #experience {
   position: relative;
-  margin-top: 60px;
+  margin-top: 40px;
 }
 
 .experience-sub-title {
@@ -388,7 +393,7 @@ article .icon {
 /* CONTACT */
 
 #contact {
-  margin-top: 60px;
+  margin-top: 5px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -567,7 +572,7 @@ footer p {
   width: 112px;
   height: 112px;
   border-radius:360px;
-  object-fit: contain;
+  object-fit: cover;
   
 }
 
