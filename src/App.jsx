@@ -4,11 +4,12 @@ import ProfileTwo from "./assets/401 Error Unauthorized-amico.svg"
 import Checkmark from "./assets/checkmark.png"
 import Education from "./assets/education.png"
 import Experience from "./assets/experience.png"
-import Img from "./assets/img.png"
-import LinkImg from "./assets/WhatsApp Image 2024-01-08 at 18.02.43.jpeg"
+import LinkImg from "./assets/profileImg.jpg"
 import P1 from "./assets/p1.png"
 import P2 from "./assets/p2.png"
-import { toast, ToastContainer } from 'react-toastify'
+import Ed from "./assets/edfoto.png"
+import Weather from "./assets/weather.png"
+import { toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
@@ -138,7 +139,7 @@ function App() {
             </div>
             <div className="text-container">
               <p>
-              Olá, me chamo Hérbert Carvalho! Tenho 20 anos e estou no 4º período de Ciência da Computação (Bacharelado). Iniciei meus estudos em programação ao entrar na faculdade e estou em busca da minha primeira oportunidade para mostrar e evoluir cada vez meu conhecimento, focando principalmente no Desenvolvimento <b>Web Frontend.</b>
+              Olá, me chamo Hérbert Carvalho! Tenho 20 anos e estou no 4º período de Ciência da Computação (Bacharelado). Iniciei meus estudos em programação ao entrar na faculdade e estou em busca da minha primeira oportunidade para mostrar e evoluir cada vez mais meu conhecimento, focando principalmente no Desenvolvimento <b>Web Frontend.</b>
               </p>
             </div>
           </div>
@@ -150,8 +151,30 @@ function App() {
         <div className="experience-details-container">
           <div className="about-containers">
             <div className="details-container">
-              <h2 className="experience-sub-title">Frontend Development</h2>
+              <h2 className="experience-sub-title">Hard Skills</h2>
               <div className="article-container">
+                <article>
+                  <img
+                    src={Checkmark}
+                    alt="Experience icon"
+                    className="icon"
+                  />
+                  <div>
+                    <h3>JavaScript</h3>
+                    <p>Experiente</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src={Checkmark}
+                    alt="Experience icon"
+                    className="icon"
+                  />
+                  <div>
+                    <h3>React</h3>
+                    <p>Experiente</p>
+                  </div>
+                </article>
                 <article>
                   <img
                     src={Checkmark}
@@ -174,28 +197,6 @@ function App() {
                     <p>Experiente</p>
                   </div>
                 </article>
-                <article>
-                  <img
-                    src={Checkmark}
-                    alt="Experience icon"
-                    className="icon"
-                  />
-                  <div>
-                    <h3>JavaScript</h3>
-                    <p>Básico</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src={Checkmark}
-                    alt="Experience icon"
-                    className="icon"
-                  />
-                  <div>
-                    <h3>React</h3>
-                    <p>Básico</p>
-                  </div>
-                </article>
               </div>
             </div>
             <div className="details-container">
@@ -209,7 +210,7 @@ function App() {
                   />
                   <div>
                     <h3>TypeScript</h3>
-                    <p>Aprendendo</p>
+                    <p>Intermediário</p>
                   </div>
                 </article>
                 <article>
@@ -219,8 +220,8 @@ function App() {
                     className="icon"
                   />
                   <div>
-                    <h3>Node JS</h3>
-                    <p>Aprendendo</p>
+                    <h3>Angular</h3>
+                    <p>Básico</p>
                   </div>
                 </article>
                 <article>
@@ -255,6 +256,56 @@ function App() {
         <h1 className="title">Projetos</h1>
         <div className="experience-details-container">
           <div className="about-containers">
+          <div className="details-container color-container">
+              <div className="article-container">
+                <img
+                  src={Ed}
+                  alt="Project 1"
+                  className="project-img"
+                />
+              </div>
+              <h2 className="experience-sub-title project-title">Portfólio / Cadastrar Consulta</h2>
+              <div className="btn-container">
+                <button
+                  className="btn btn-color-2 project-btn"
+                  onClick={()=>{window.open('https://github.com/HerbertCarvalhoxxi/Ed-Folio')}}
+                >
+                  Github
+                </button>
+                <button
+                  className="btn btn-color-2 project-btn"
+                  onClick={()=>window.open('https://main--psicologoedinaldoalves.netlify.app/')}
+                >
+                  Deploy
+                </button>
+              </div>
+            </div>
+            <div className="details-container color-container">
+              <div className="article-container">
+                <img
+                  src={Weather}
+                  alt="Project 1"
+                  className="project-img"
+                />
+              </div>
+              <h2 className="experience-sub-title project-title">Weather App</h2>
+              <div className="btn-container">
+                <button
+                  className="btn btn-color-2 project-btn"
+                  onClick={()=>{window.open('https://github.com/HerbertCarvalhoxxi/Weather-App')}}
+                >
+                  Github
+                </button>
+                <button id='disable-button'
+                  disabled='disabled'
+                  
+                  className="btn btn-color-2 project-btn"
+                  onClick={()=>window.open('#')}
+                >
+                  Deploy
+                </button>
+              </div>
+            </div>  
             <div className="details-container color-container">
               <div className="article-container">
                 <img
